@@ -28,7 +28,7 @@ export default function App() {
     }
 
     try {
-      const res = await fetch('https://apparently-advanced-macaque.ngrok-free.app/analyse', {
+      const res = await fetch('https://apparently-advanced-macaque.ngrok-free.app/analyze', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -73,6 +73,7 @@ export default function App() {
               <Text style={styles.description}>This score indicates the likelhood that your posting has biased text</Text>
               <Text style={styles.result}>Neutral Score: {response.neutral_score}%</Text>
               <Text style={styles.description}>This score indicates the likelhood that your posting has neutral text</Text>
+
             </View>
           )}
           <StatusBar style="auto" />
@@ -129,7 +130,6 @@ const styles = StyleSheet.create({
     fontSize: 12,
     color: 'white',
     fontStyle: 'italic',
-    textAlign: 'center',
-    margin: 5
+    textAlign: 'center'
   }
 });
