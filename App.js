@@ -28,7 +28,7 @@ export default function App() {
     }
 
     try {
-      const res = await fetch('http://192.168.1.10:5000/analyze', {
+      const res = await fetch('https://apparently-advanced-macaque.ngrok-free.app/analyse', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
