@@ -1,0 +1,6 @@
+Flask
+torch
+transformers
+nltk
+flask_cors
+gunicorn
